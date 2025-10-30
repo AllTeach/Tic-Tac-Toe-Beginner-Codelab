@@ -198,18 +198,19 @@ public class MainActivity extends AppCompatActivity {
          }
 
          bottomNav.setOnItemSelectedListener(item -> {
-             Fragment selectedFragment = null;
-             switch (item.getItemId()) {
-                 case R.id.nav_fragment1:
-                     selectedFragment = new Fragment1();
-                     break;
-                 case R.id.nav_fragment2:
-                     selectedFragment = new Fragment2();
-                     break;
-                 case R.id.nav_fragment3:
-                     selectedFragment = new Fragment3();
-                     break;
-             }
+            Fragment selectedFragment = null;
+            if (item.getItemId()==R.id.nav_fragment1) {
+
+                selectedFragment = new Fragment_1();
+            }
+            else  if (item.getItemId()== R.id.nav_fragment2) {
+                selectedFragment = new Fragment_2();
+            }
+            else
+            {
+                    selectedFragment = new Fragment_1();
+
+            }
              if (selectedFragment != null) {
                  // Replace the fragment in the container.
                  // This creates a new fragment instance each time for simplicity.
