@@ -29,7 +29,7 @@
 
 ```gradle
 dependencies {
-    implementation 'com.google.android.material:material:1.9.0' // או הגרסה היציבה העדכנית
+    implementation (libs.material)
     // ... שאר התלויות
 }
 ```
