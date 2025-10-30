@@ -29,7 +29,7 @@ In your module `build.gradle` (Module: app) add the material library if not alre
 
 ```gradle
 dependencies {
-    implementation 'com.google.android.material:material:1.9.0' // or latest stable
+    implementation (libs.material)
     // ... other dependencies
 }
 ```
