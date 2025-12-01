@@ -180,7 +180,7 @@ i.putExtra("opponentName", opponentName);
 startActivity(i);
 ```
 
-Teacher decision you can make in class
+decision you can make
 - Decide whether host is always X or O — that is game logic only and does not affect Firestore.
 
 ---
